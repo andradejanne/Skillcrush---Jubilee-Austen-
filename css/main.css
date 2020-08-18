@@ -110,23 +110,19 @@ textarea {
    header .content-wrapper h1 {
      width: 100%;
      font-family: 'Lora', serif;
-     font-size: 4em;
+     font-size: 3.45em;
      color: #bbc085;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     text-align: center;
    }
 
    .header-divider {
     background: #bbc085;
     width: 100%;
     height: 1px;
-    margin: 10px 0 20px 0;
   }
 
    header nav{
      width: 60%;
-     font-size: 1.25em;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -137,35 +133,33 @@ textarea {
     width: 100%; 
     display: flex;
     justify-content: space-around;
+    align-items: center;
    }
 
    header nav ul li a {
-     text-transform: uppercase;
+     text-transform: lowercase;
      text-decoration: none;
      color: #f5a48a;
-     justify-content: center;
-     flex-flow: row wrap;
-      padding: 20px 20px 20px; 
+      padding: 20px 20px 20px 20px; 
    }
 
  /***** HERO Mobile *****/
    .hero-area{
     background: url('../img/hero.png');
     background-size: cover;
-    background-position: top-left;
-    min-height: 600px;
+    background-position: center;
+    min-height: 540px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
   }
 
    .hero-area h2 {
-     width: 55%;
+     width: 100%;
      text-align: center;
      font-family: 'Lora', serif;
-     font-size: 5em;
+     font-size: 3em;
      line-height: 1.5em;
-     padding: 25px 35px 30px 30px;
      color: #9b9b9b;
   
    }
@@ -176,63 +170,69 @@ textarea {
    }
 
    /***** ABOUT Mobile *****/
-
-   #about .half-width {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 10px 45px 45px 45px;
+   .about {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+  
+   .about .content-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     padding: 30px 30px 30px 30px;
    }
 
-   #about h2{
-     font-size: 4.5em;
+   .about h2{
+     font-size: 3em;
      font-family: 'Lora', serif;
      text-align: center;
      padding-top: 25px;
    }
 
-   #about p{
+   .about p{
      color: #7f7f7f;
-     font-size: 2.25em;
+     font-size: 1.10em;
      line-height: 2em;
-     padding: 10px 45px 45px 45px;
+     padding-bottom: 45px;
    }
 
    /***** WORK mobile *****/
-   #work {
+   .work {
      background-color: #fbdfd0;
      display: flex;
       justify-content: center;
       flex-flow: row wrap;
    }
-
-   #work article{
-    width: 65%; 
+   .work .content-wrapper {
      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+    padding: 50px 60px 60px 60px;
    }
 
-   #work p i{
-     font-size: 3.60em;
+   .work .work-items{
+    width: 85%; 
+   }
+
+   .work p i{
+     font-size: 3em;
      color: #f5a48a;
    }
 
-   #work h3{
+   .work h3{
      font-family: 'Source Sans Pro', sans-serif;
-     font-size: 3em;
+     font-size: 2em;
      text-align: center;
-     margin: 0;
    }
 
 
-   #work p{
-    padding: 50px 60px 60px 60px;
+   .work p{
      font-family: 'Lora', serif;
      line-height: 2em;
-     font-size: 2.20em;
+     font-size: 1.10em;
      text-align: center;
     }
 
@@ -407,12 +407,13 @@ textarea {
    ========================================================================== */
 @media only screen and (min-width: 768px) {
   /******* Tablet Styles Here *******/
-  
+
 
   /******* Header Tablet *******/
   header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #efefef;
   }
 
@@ -420,33 +421,57 @@ textarea {
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  header .content-wrapper h1 {
+    width: 100%;
   }
 
   header nav {
     width: 30%;
   }
 
-  header nav ul li {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  /******* Hero Tablet *******/
+  .hero-area {
+    min-height: 600px;
   }
   
-
-
-  /******* Hero Tablet *******/
   .hero-area h2{
     min-width: 85%;
-    font-size: 4em;
+    font-size: 3.85em;
 
-  }
-
-  .hero-area {
-    min-height: 650px;
   }
 
   /******* About Tablet *******/
-  
+  .about  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about h2{
+    width: 100%;
+    font-size: 4em;
+  }
+
+  .about p {
+    width: 100%;
+    font-size: 1.5em;
+  }
 
   /******* Work Tablet *******/
 
