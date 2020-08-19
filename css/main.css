@@ -104,13 +104,12 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      background-color: #efefef;
-     margin: 0;
    }
 
    header .content-wrapper h1 {
-     width: 100%;
+     width: 85%;
      font-family: 'Lora', serif;
-     font-size: 3.45em;
+     font-size: 3.5em;
      color: #bbc085;
      text-align: center;
    }
@@ -122,7 +121,7 @@ textarea {
   }
 
    header nav{
-     width: 60%;
+     width: 100%;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -134,13 +133,15 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 20px 20px 20px; 
+
    }
 
    header nav ul li a {
      text-transform: lowercase;
      text-decoration: none;
      color: #f5a48a;
-      padding: 20px 20px 20px 20px; 
+     font-size: 1.5em;
    }
 
  /***** HERO Mobile *****/
@@ -158,7 +159,7 @@ textarea {
      width: 100%;
      text-align: center;
      font-family: 'Lora', serif;
-     font-size: 3em;
+     font-size: 2.65em;
      line-height: 1.5em;
      color: #9b9b9b;
   
@@ -186,7 +187,7 @@ textarea {
    }
 
    .about h2{
-     font-size: 3em;
+     font-size: 2.65em;
      font-family: 'Lora', serif;
      text-align: center;
      padding-top: 25px;
@@ -210,30 +211,29 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
-    padding: 50px 60px 60px 60px;
+     flex-flow: row wrap;
+     text-align: center;
+     padding: 30px 30px 30px 30px;
    }
 
-   .work .work-items{
-    width: 85%; 
+   .work article{
+    width: 100%; 
    }
 
-   .work p i{
+   .work .fontawesome-icon{
      font-size: 3em;
      color: #f5a48a;
    }
 
    .work h3{
      font-family: 'Source Sans Pro', sans-serif;
-     font-size: 2em;
-     text-align: center;
+     font-size: 1.25em;
    }
 
 
    .work p{
      font-family: 'Lora', serif;
-     line-height: 2em;
-     font-size: 1.10em;
-     text-align: center;
+     line-height: 2em; 
     }
 
    /***** CONTACT Mobile *****/
@@ -278,7 +278,7 @@ textarea {
    }
 
    .wrapper figure {
-     border: 12px solid #fff;
+     border: 10px solid #fff;
    }
 
    .wrapper figure img {
@@ -287,19 +287,17 @@ textarea {
 
    .socials h2 {
      font-family: 'Lora', serif;
-     font-size: 3.75em;
+     font-size: 2em;
    }
 
    .socials h3 {
      font-family: 'Source Sans Pro', sans-serif;
-     font-size: 2.875em;
+     font-size: 1.25em;
      font-weight: lighter;
-     margin: 0 20px 20px 20px;
    }
 
    .socials .email-address {
-     font-size: 2.875em;
-     padding-bottom: 35px;
+     font-size: 1.25em;
    }
 
    a {
@@ -312,11 +310,9 @@ textarea {
      list-style: none;
    }
 
-
    .social-icons p {
-     font-size: 1.75em;
-     padding: 0 35px 25px 25px;
-     margin: 0 auto;
+     font-size: 0.85em;
+     margin: 5px 12px 5px 12px;
    }
 /* ==========================================================================
    Helper classes
