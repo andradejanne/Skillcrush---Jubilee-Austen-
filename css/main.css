@@ -107,9 +107,9 @@ textarea {
    }
 
    header .content-wrapper h1 {
-     width: 85%;
+     width: 75%;
      font-family: 'Lora', serif;
-     font-size: 3.5em;
+     font-size: 2em;
      color: #bbc085;
      text-align: center;
    }
@@ -125,7 +125,6 @@ textarea {
      display: flex;
      justify-content: space-around;
      align-items: center;
-     flex-flow: row wrap;
    }
 
    header nav ul{
@@ -134,14 +133,13 @@ textarea {
     justify-content: space-around;
     align-items: center;
     padding: 20px 20px 20px 20px; 
-
    }
 
    header nav ul li a {
-     text-transform: lowercase;
+     text-transform: uppercase;
      text-decoration: none;
      color: #f5a48a;
-     font-size: 1.5em;
+     font-size: 1em;
    }
 
  /***** HERO Mobile *****/
@@ -149,20 +147,22 @@ textarea {
     background: url('../img/hero.png');
     background-size: cover;
     background-position: center;
-    min-height: 540px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 30px;
   }
 
    .hero-area h2 {
      width: 100%;
-     text-align: center;
+     text-align: left;
      font-family: 'Lora', serif;
-     font-size: 2.65em;
-     line-height: 1.5em;
+     font-size: 2.55em;
+     line-height: 1.4em;
      color: #9b9b9b;
-  
    }
 
     .hero-area h2 span {
@@ -187,40 +187,39 @@ textarea {
    }
 
    .about h2{
-     font-size: 2.65em;
+     font-size: 2em;
      font-family: 'Lora', serif;
-     text-align: center;
-     padding-top: 25px;
+     text-align: left;
    }
 
    .about p{
      color: #7f7f7f;
-     font-size: 1.10em;
-     line-height: 2em;
+     font-size: 1em;
+     line-height: 1.75em;
      padding-bottom: 45px;
    }
 
    /***** WORK mobile *****/
-   .work {
+   .work .content-wrapper {
      background-color: #fbdfd0;
      display: flex;
       justify-content: center;
       flex-flow: row wrap;
    }
-   .work .content-wrapper {
+   .work .work-items {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
      text-align: center;
-     padding: 30px 30px 30px 30px;
    }
 
    .work article{
-    width: 100%; 
+    width: 85%; 
+    padding: 30px 30px 30px 30px;
    }
 
-   .work .fontawesome-icon{
+   .work-items article p i {
      font-size: 3em;
      color: #f5a48a;
    }
@@ -231,23 +230,26 @@ textarea {
    }
 
 
-   .work p{
+   .work-items article p{
      font-family: 'Lora', serif;
      line-height: 2em; 
+     font-size: 1em;
     }
 
    /***** CONTACT Mobile *****/
 
    footer {
-     width: 100%;
+     min-height: 500px;
      background-color: #ebebeb;
+     margin: 0 auto;
    }
 
    footer .wrapper{
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-flow: row wrap
+     flex-flow: row wrap;
+     margin: 0 auto;
    }
 
    footer .socials {
@@ -259,22 +261,9 @@ textarea {
 
    footer .social-icons {
      display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
-
-   footer .social-icons p {
      justify-content: space-around;
      align-items: center;
-   }
-
-   .contact h2,
-   .contact h3{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+     margin: 0 auto;
    }
 
    .wrapper figure {
@@ -287,17 +276,18 @@ textarea {
 
    .socials h2 {
      font-family: 'Lora', serif;
-     font-size: 2em;
+     font-size: 1.6em;
+     margin: 0 auto;
    }
 
    .socials h3 {
      font-family: 'Source Sans Pro', sans-serif;
-     font-size: 1.25em;
+     font-size: 1.1em;
      font-weight: lighter;
    }
 
    .socials .email-address {
-     font-size: 1.25em;
+     font-size: 1.12em;
    }
 
    a {
@@ -311,9 +301,17 @@ textarea {
    }
 
    .social-icons p {
-     font-size: 0.85em;
-     margin: 5px 12px 5px 12px;
+     font-size: 0.65em;
+     margin: 5px 10px 5px 10px;
    }
+
+   footer .copyright {
+     margin: 10px 0;
+     text-align: center;
+      font-size: .85em;
+   }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -407,25 +405,32 @@ textarea {
 
   /******* Header Tablet *******/
   header {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
-    background-color: #efefef;
   }
 
   header .content-wrapper {
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   header .content-wrapper h1 {
-    width: 100%;
+    width: 50%;
+    font-size: 2.5em;
   }
 
   header nav {
-    width: 30%;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  .header-divider {
+    display: none;
   }
 
   /******* Hero Tablet *******/
@@ -434,49 +439,149 @@ textarea {
   }
   
   .hero-area h2{
-    min-width: 85%;
-    font-size: 3.85em;
-
+    min-width: 50%;
+    font-size: 3.5em;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 20px 40px 10px;
   }
 
   /******* About Tablet *******/
-  .about  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .about .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .about .about-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
   .about h2{
     width: 100%;
-    font-size: 4em;
+    font-size: 2.5em;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .about p {
+    width: 45%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /******* Work Tablet *******/
+  .work article{
+    width: 75%; 
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+   }
+
+  .work h3{
+    font-size: 1.75em;
+  }
+
+  .work-items article p {
+    font-size: 1.20em;
+  }
+
+
+  /******* Contact Tablet *******/
+  footer .wrapper {
+    width: 75%;
+  }
+  footer figure{
+    width: 80%;
+  }
+
+  footer .socials {
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  footer .social-icons {
+ 
+    margin: 0 auto;
+  }
+
+  .socials h2 {
+    width: 100%;
+    font-size: 1.85em;
+  }
+
+  .socials h3 {
     width: 100%;
     font-size: 1.5em;
   }
 
-  /******* Work Tablet *******/
+  .socials .email-address {
+    width: 100%;
+    font-size: 1.35em;
+  }
 
-  /******* Contact Tablet *******/
+  .social-icons p {
+    width: 100%;
+    margin: 5px 10px 5px 10px;
+  }
 
+  footer .copyright {
+    width: 189px;
+  }
 }
 
 @media only screen and (min-width: 1200px){
   /*Desktop style here*/
+
+  /*Hero Area Desktop*/
+  .hero-area h2 {
+    width: 75%;
+    font-size: 4.5em;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 90px; 
+  }
+
+  .hero-area {
+    min-height: 770px;
+    background-position: center;
+  }
+
+  /*About Desktop*/
+  .about .content-wrapper {
+    min-height: 550px;
+  }
+
+  .about .about-content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about h2{
+    width: 100%;
+    font-size: 2.75em;
+  }
+
+  .about p {
+    width: 30%;
+    font-size: 1.3em;
+  }
+
+  /*Work Desktop*/
+  .work .content-wrapper {
+    min-height: 
+  }
+  .work article{
+    width: 25%; 
+    padding: 50px 50px 50px 50px;
+    margin: 0 auto;
+   }
+
+  .work h3{
+    font-size: 1.75em;
+  }
+
+  .work-items article p {
+    font-size: 1.20em;
+  }
+
 }
 
 @media print,
